@@ -1,0 +1,2 @@
+    packages:
+    >$ pip install requests fastapi uvicorn pydantic spacy
