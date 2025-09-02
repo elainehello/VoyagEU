@@ -24,6 +24,21 @@ def search_transport(origin: str, destination: str, date: str):
             timeout=10,
         )
         response.raise_for_status()
-        return response.json()
-    except Exception:
+        data = response.json()
+        # Extract itineraries and map to TransportOption schema
+        itineraries = data.get("data", {}).get("itineraries", [])
+        results = []
+        for item in itineraries:
+            # Use the first leg for from/to, duration, etc.
+            leg = item["legs"][0]
+            results.append({
+                "from_city": leg["origin"]["city"],
+                "to_city": leg["destination"]["city"],
+                "price": item["price"]["raw"],
+                "duration": f"{leg['durationInMinutes']//60}h{leg['durationInMinutes']%60}m",
+                "type": "flight"
+            })
+        return results
+    except Exception as e:
+        print("API error:", e)
         return load_mock("flights.json")
