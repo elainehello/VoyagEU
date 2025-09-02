@@ -6,6 +6,7 @@
 from fastapi import APIRouter
 from typing import List
 from app.api import schemas
+from app.tools.transport import search_transport
 from config.settings import DATA_PATH
 import json
 import os
@@ -19,9 +20,7 @@ def load_mock(filename: str):
     
 @router.post("/transport", response_model=List[schemas.TransportOption])
 def get_transport(request: schemas.TransportRequest):
-    flights = load_mock("flights.json")
-    trains = load_mock("trains.json")
-    return flights + trains
+    return search_transport(request.origin, request.destination, request.date)
 
 @router.post("/accomodation", response_model=List[schemas.AccommodationOption])
 def get_accommodation(request: schemas.AccommodationRequest):
