@@ -20,7 +20,7 @@ def load_mock(filename: str):
     
 @router.post("/transport", response_model=List[schemas.TransportOption])
 def get_transport(request: schemas.TransportRequest):
-    return search_transport(request.origin, request.destination, request.date)
+    return search_transport(request.origin, request.destination, request.date_from, request.date_to)
 
 @router.post("/accommodation", response_model=List[schemas.AccommodationOption])
 def get_accommodation(request: schemas.AccommodationRequest):

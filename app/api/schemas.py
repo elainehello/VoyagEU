@@ -8,7 +8,8 @@ from typing import List, Optional
 class TransportRequest(BaseModel):
     origin: str = Field(..., description="Departure city")
     destination: str = Field(..., description="Arrival city")
-    date: str = Field(..., description="Travel date in YYYY-MM-DD format")
+    date_from: str = Field(..., description="Outbound travel date in YYYY-MM-DD format")
+    date_to: str = Field(None, description="Return travel date in YYYY-MM-DD format (optional)")
 
 # Response model for a single transport option
 class TransportOption(BaseModel):
