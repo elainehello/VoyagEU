@@ -1,2 +1,13 @@
     packages:
     >$ pip install requests fastapi uvicorn pydantic spacy
+
+    kill port:
+    >$ sudo fuser -k 8000/tcp
+
+    curl -X POST http://127.0.0.1:8000/api/v1/transport \
+  -H "Content-Type: application/json" \
+  -d '{
+    "origin": "LHR",
+    "destination": "JFK",
+    "date_from": "2024-09-10"
+  }'
