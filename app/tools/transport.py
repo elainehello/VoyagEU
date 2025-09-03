@@ -1,9 +1,10 @@
 import httpx
 import json
+import os
 from app.utils.helpers import load_mock
 
 KIWI_API_URL = "https://kiwi-com-cheap-flights.p.rapidapi.com/round-trip"
-KIWI_API_KEY = "989a9ad1cfmshc5724b8f61db6b2p1152cbjsn41b8b3c2d2b4"
+KIWI_API_KEY = os.getenv("KIWI_API_KEY")
 
 def search_one_way(origin: str, destination: str, date_from: str):
     ONE_WAY_URL = "https://kiwi-com-cheap-flights.p.rapidapi.com/one-way"
