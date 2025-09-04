@@ -1,0 +1,272 @@
+{
+  "predictions": [
+    {
+      "description": "Musée d'Art et d'Histoire, Rue Charles-Galland, Geneva, Switzerland",
+      "matched_substrings": [
+        {
+          "length": 25,
+          "offset": 0
+        }
+      ],
+      "place_id": "ChIJBThVgTJljEcRjOWvPKrMhUg",
+      "reference": "ChIJBThVgTJljEcRjOWvPKrMhUg",
+      "structured_formatting": {
+        "main_text": "Musée d'Art et d'Histoire",
+        "main_text_matched_substrings": [
+          {
+            "length": 25,
+            "offset": 0
+          }
+        ],
+        "secondary_text": "Rue Charles-Galland, Geneva, Switzerland"
+      },
+      "terms": [
+        {
+          "offset": 0,
+          "value": "Musée d'Art et d'Histoire"
+        },
+        {
+          "offset": 27,
+          "value": "Rue Charles-Galland"
+        },
+        {
+          "offset": 48,
+          "value": "Geneva"
+        },
+        {
+          "offset": 56,
+          "value": "Switzerland"
+        }
+      ],
+      "types": [
+        "establishment",
+        "museum",
+        "point_of_interest",
+        "tourist_attraction"
+      ]
+    },
+    {
+      "description": "Museum Wetzikon, Farbstrasse, Wetzikon, Zürich, Switzerland",
+      "matched_substrings": [
+        {
+          "length": 15,
+          "offset": 0
+        },
+        {
+          "length": 6,
+          "offset": 40
+        }
+      ],
+      "place_id": "ChIJrcOCdMC7mkcRMaeYoI02GHY",
+      "reference": "ChIJrcOCdMC7mkcRMaeYoI02GHY",
+      "structured_formatting": {
+        "main_text": "Museum Wetzikon",
+        "main_text_matched_substrings": [
+          {
+            "length": 15,
+            "offset": 0
+          }
+        ],
+        "secondary_text": "Farbstrasse, Wetzikon, Zürich, Switzerland",
+        "secondary_text_matched_substrings": [
+          {
+            "length": 6,
+            "offset": 23
+          }
+        ]
+      },
+      "terms": [
+        {
+          "offset": 0,
+          "value": "Museum Wetzikon"
+        },
+        {
+          "offset": 17,
+          "value": "Farbstrasse"
+        },
+        {
+          "offset": 30,
+          "value": "Wetzikon"
+        },
+        {
+          "offset": 40,
+          "value": "Zürich"
+        },
+        {
+          "offset": 48,
+          "value": "Switzerland"
+        }
+      ],
+      "types": [
+        "establishment",
+        "museum",
+        "point_of_interest",
+        "tourist_attraction"
+      ]
+    },
+    {
+      "description": "Ortsmuseum Hinwil, Oberdorfstrasse, Hinwil, Zürich, Switzerland",
+      "matched_substrings": [
+        {
+          "length": 17,
+          "offset": 0
+        },
+        {
+          "length": 6,
+          "offset": 44
+        }
+      ],
+      "place_id": "ChIJszO6D6e5mkcRGqBRxdS2VsU",
+      "reference": "ChIJszO6D6e5mkcRGqBRxdS2VsU",
+      "structured_formatting": {
+        "main_text": "Ortsmuseum Hinwil",
+        "main_text_matched_substrings": [
+          {
+            "length": 17,
+            "offset": 0
+          }
+        ],
+        "secondary_text": "Oberdorfstrasse, Hinwil, Zürich, Switzerland",
+        "secondary_text_matched_substrings": [
+          {
+            "length": 6,
+            "offset": 25
+          }
+        ]
+      },
+      "terms": [
+        {
+          "offset": 0,
+          "value": "Ortsmuseum Hinwil"
+        },
+        {
+          "offset": 19,
+          "value": "Oberdorfstrasse"
+        },
+        {
+          "offset": 36,
+          "value": "Hinwil"
+        },
+        {
+          "offset": 44,
+          "value": "Zürich"
+        },
+        {
+          "offset": 52,
+          "value": "Switzerland"
+        }
+      ],
+      "types": [
+        "establishment",
+        "museum",
+        "point_of_interest",
+        "tourist_attraction"
+      ]
+    },
+    {
+      "description": "Ortsmuseum Küsnacht, Tobelweg, Küsnacht, Zürich, Switzerland",
+      "matched_substrings": [
+        {
+          "length": 19,
+          "offset": 0
+        },
+        {
+          "length": 6,
+          "offset": 41
+        }
+      ],
+      "place_id": "ChIJlRZkcVqmmkcRXIWyy1D5SKs",
+      "reference": "ChIJlRZkcVqmmkcRXIWyy1D5SKs",
+      "structured_formatting": {
+        "main_text": "Ortsmuseum Küsnacht",
+        "main_text_matched_substrings": [
+          {
+            "length": 19,
+            "offset": 0
+          }
+        ],
+        "secondary_text": "Tobelweg, Küsnacht, Zürich, Switzerland",
+        "secondary_text_matched_substrings": [
+          {
+            "length": 6,
+            "offset": 20
+          }
+        ]
+      },
+      "terms": [
+        {
+          "offset": 0,
+          "value": "Ortsmuseum Küsnacht"
+        },
+        {
+          "offset": 21,
+          "value": "Tobelweg"
+        },
+        {
+          "offset": 31,
+          "value": "Küsnacht"
+        },
+        {
+          "offset": 41,
+          "value": "Zürich"
+        },
+        {
+          "offset": 49,
+          "value": "Switzerland"
+        }
+      ],
+      "types": [
+        "establishment",
+        "museum",
+        "point_of_interest",
+        "tourist_attraction"
+      ]
+    },
+    {
+      "description": "Kunsthaus Zürich, Heimplatz, Zürich, Switzerland",
+      "matched_substrings": [
+        {
+          "length": 16,
+          "offset": 0
+        }
+      ],
+      "place_id": "ChIJw12aEaygmkcRowvgojyyzdk",
+      "reference": "ChIJw12aEaygmkcRowvgojyyzdk",
+      "structured_formatting": {
+        "main_text": "Kunsthaus Zürich",
+        "main_text_matched_substrings": [
+          {
+            "length": 16,
+            "offset": 0
+          }
+        ],
+        "secondary_text": "Heimplatz, Zürich, Switzerland"
+      },
+      "terms": [
+        {
+          "offset": 0,
+          "value": "Kunsthaus Zürich"
+        },
+        {
+          "offset": 18,
+          "value": "Heimplatz"
+        },
+        {
+          "offset": 29,
+          "value": "Zürich"
+        },
+        {
+          "offset": 37,
+          "value": "Switzerland"
+        }
+      ],
+      "types": [
+        "establishment",
+        "museum",
+        "point_of_interest",
+        "tourist_attraction"
+      ]
+    }
+  ],
+  "status": "OK"
+}

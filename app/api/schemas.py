@@ -41,6 +41,13 @@ class ActivityOption(BaseModel):
     name: str = Field(..., description="Name of the monument, museum, or activity")
     description: str = Field(..., description="Brief description")
     location: str = Field(..., description="Neighborhood or address")
+    place_id: str = Field(..., description="Google Place ID")
+    category: List[str] = Field(..., description="List of place types/categories")
+    formatted_address: str = Field(..., description="Full formatted address")
+    lat: float = Field(..., description="Latitude")
+    lng: float = Field(..., description="Longitude")
+    photos: List[str] = Field(..., description="Photo references or URLs")
+    url: str = Field(..., description="Google Maps URL")
 
 # Request model for searching food options
 class FoodRequest(BaseModel):

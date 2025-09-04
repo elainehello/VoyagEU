@@ -8,6 +8,7 @@ from typing import List
 from app.api import schemas
 from app.tools.transport import search_transport
 from app.tools.accomodation import search_destination
+from app.tools.activities import search_activities
 from config.settings import DATA_PATH
 import json
 import os
@@ -31,7 +32,7 @@ def get_accommodation(request: schemas.AccommodationRequest):
 
 @router.post("/activities", response_model=List[schemas.ActivityOption])
 def get_activity(request: schemas.ActivitiesRequest):
-    activities = load_mock("activities.json")
+    activities = search_activities(request.city, request.interests)
     return activities
 
 @router.post("/food", response_model=List[schemas.FoodOption])
