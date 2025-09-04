@@ -1,0 +1,18 @@
+API Integration Practice Notes
+-----------------------------
+
+- This module demonstrates how to consume third-party APIs (Booking.com, Kiwi) using Python.
+- Steps typically include:
+  1. Load API credentials from environment variables for security.
+  2. Build the request URL and headers as required by the API.
+  3. Make HTTP requests using httpx or requests.
+  4. Parse the JSON response and extract relevant data.
+  5. Handle errors gracefully (timeouts, invalid responses, etc.).
+  6. Optionally, store or cache results for later use.
+
+- This pattern is reusable for any external API:
+  - Define a function for each endpoint you need.
+  - Keep parsing logic separate for clarity and testing.
+  - Use environment variables for sensitive information.
+
+- This is a core skill for backend and full-stack developers.
