@@ -6,7 +6,7 @@ from app.utils.helpers import load_mock
 KIWI_API_URL = "https://kiwi-com-cheap-flights.p.rapidapi.com/round-trip"
 KIWI_API_KEY = os.getenv("KIWI_API_KEY")
 
-def search_one_way(origin: str, destination: str, date_from: str):
+async def search_one_way(origin: str, destination: str, date_from: str):
     ONE_WAY_URL = "https://kiwi-com-cheap-flights.p.rapidapi.com/one-way"
     headers = {
         "x-rapidapi-host": "kiwi-com-cheap-flights.p.rapidapi.com",

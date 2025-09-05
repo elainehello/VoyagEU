@@ -21,18 +21,18 @@ def load_mock(filename: str):
         return json.load(f)
     
 @router.post("/transport", response_model=List[schemas.TransportOption])
-def get_transport(request: schemas.TransportRequest):
-    flights = search_transport(request.origin, request.destination, request.date_from, request.date_to)
+async def get_transport(request: schemas.TransportRequest):
+    flights = await search_transport(request.origin, request.destination, request.date_from, request.date_to)
     return flights
 
 @router.post("/accommodation", response_model=List[schemas.AccommodationOption])
-def get_accommodation(request: schemas.AccommodationRequest):
-    hotels = search_destination(request.city)
+async def get_accommodation(request: schemas.AccommodationRequest):
+    hotels = await search_destination(request.city)
     return hotels
 
 @router.post("/activities", response_model=List[schemas.ActivityOption])
-def get_activity(request: schemas.ActivitiesRequest):
-    activities = search_activities(request.city, request.interests)
+async def get_activity(request: schemas.ActivitiesRequest):
+    activities = await search_activities(request.city, request.interests)
     return activities
 
 @router.post("/food", response_model=List[schemas.FoodOption])

@@ -7,7 +7,7 @@ from app.api import schemas  # Import your schemas
 BOOKING_API_HOST = os.getenv("BOOKING_API_HOST")
 BOOKING_API_KEY = os.getenv("BOOKING_API_KEY")
 
-def search_destination(query: str) -> List[schemas.AccommodationOption]:
+async def search_destination(query: str) -> List[schemas.AccommodationOption]:
     """
     Calls the Booking.com searchDestination API to get destination info for a query.
     Returns a list of AccommodationOption objects.

@@ -10,7 +10,7 @@ GOOGLE_API_HOST = os.getenv("GOOGLE_API_HOST")
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 GOOGLE_API_URL = os.getenv("GOOGLE_API_URL")
 
-def search_activities(city: str, interests: List[str]) -> List[schemas.ActivityOption]:
+async def search_activities(city: str, interests: List[str]) -> List[schemas.ActivityOption]:
     """
     Calls the Google Places Autocomplete API to get place suggestions for the city and interests.
     Returns a list of ActivityOption objects.
